@@ -1,5 +1,7 @@
 .red{
     color: red;
     font-size: 30px;
-    border: blue 2px dashed;
+    border: blue 2px solid;
+    width: 500px;
+    height: 100px;
 }

@@ -1,0 +1,60 @@
+<input value="Konstantin" class="first-name" id="first-name" />
+<input value="Sedych" class="first-name" id="last-name" />
+<input value="Kharkov city" class="first-name" id="adress" />
+
+<select  id="cities">
+    <option>Kharkov</option>
+    <option selected='selected'>Kiev</option>
+    <option>Sumi</option>
+</select>
+<textarea  id="hobbies">JS,HTML,CSS</textarea>
+<div id='kprint'>
+    <img width="300px" src="http://k-print.kharkov.ua/images/logo.png"/>
+</div>
+
+
+<script>
+    var kprintId = 'kprint';
+    var kprintEl = document.getElementById(kprintId);
+    window.alert(kprintEl.value);
+
+
+
+
+
+    var citiesEl;
+    var citiesId;
+    citiesId = 'cities';
+    citiesEl = document.getElementById(citiesId)
+
+    var hobbiesEl;
+    var hobbiesId;
+    hobbiesId = 'hobbies';
+    hobbiesEl = document.getElementById(hobbiesId)
+    //window.alert(hobbiesEl.value);
+
+
+    var firstNameEl;
+    var firstNameId;
+    var lastNameId;
+    var lastNameEl;
+    var adressId
+    var adressEl
+    lastNameId = 'last-name';
+    lastNameEl = document.getElementById(lastNameId);
+    adressId = 'adress';
+    adressEl = document.getElementById(adressId);
+    firstNameId = 'first-name';
+    firstNameEl = document.getElementById(firstNameId);
+    //window.alert(firstNameEl.value);
+    //window.alert(lastNameEl.value);
+    //window.alert(adressEl.value);
+    //window.alert(citiesEl.value)
+
+
+
+
+
+
+
+</script>

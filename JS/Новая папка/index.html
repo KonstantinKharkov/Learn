@@ -1,60 +1,49 @@
-<input value="Konstantin" class="first-name" id="first-name" />
-<input value="Sedych" class="first-name" id="last-name" />
-<input value="Kharkov city" class="first-name" id="adress" />
+<input value="Konstantin" class="first-name-input default-input" id="first-name" />
+<input value="Sedych" class="last-name-input default-input " id="last-name" />
+<input value="Kharkov city" class="address-input default-input " id="address" />
 
 <select  id="cities">
-    <option>Kharkov</option>
-    <option selected='selected'>Kiev</option>
+    <option>Kiev</option>
+    <option selected='selected'>Kharkov</option>
     <option>Sumi</option>
 </select>
 <textarea  id="hobbies">JS,HTML,CSS</textarea>
-<div id='kprint'>
-    <img width="300px" src="http://k-print.kharkov.ua/images/logo.png"/>
+<div id='kprint' ">
+    <img id='avatar' width="200px" src="http://k-print.kharkov.ua/images/logo.png" />
 </div>
 
 
 <script>
+
+    var firstNameId = 'first-name';
+    var firstNameEl = document.getElementById(firstNameId);
+    var lastNameId = 'last-name';
+    var lastNameEl = document.getElementById(lastNameId);
+    var addressId = 'address';
+    var addressEl = document.getElementById(addressId);
+    var avatarId = 'avatar';
+    var avatarEl = document.getElementById(avatarId)
     var kprintId = 'kprint';
-    var kprintEl = document.getElementById(kprintId);
-    window.alert(kprintEl.value);
+    var kprintEl = document.getElementById(kprintId)
+    firstNameEl.value = 'Kostik';
 
+    //window.alert(lastNameEl.className);
+    //addressEl.setAttribute('value', 'adris');
 
+    lastNameEl.className = 'error-input';
+    lastNameEl.title = 'wrong input';
 
-
-
-    var citiesEl;
-    var citiesId;
-    citiesId = 'cities';
-    citiesEl = document.getElementById(citiesId)
-
-    var hobbiesEl;
-    var hobbiesId;
-    hobbiesId = 'hobbies';
-    hobbiesEl = document.getElementById(hobbiesId)
-    //window.alert(hobbiesEl.value);
-
-
-    var firstNameEl;
-    var firstNameId;
-    var lastNameId;
-    var lastNameEl;
-    var adressId
-    var adressEl
-    lastNameId = 'last-name';
-    lastNameEl = document.getElementById(lastNameId);
-    adressId = 'adress';
-    adressEl = document.getElementById(adressId);
-    firstNameId = 'first-name';
-    firstNameEl = document.getElementById(firstNameId);
-    //window.alert(firstNameEl.value);
-    //window.alert(lastNameEl.value);
-    //window.alert(adressEl.value);
-    //window.alert(citiesEl.value)
-
-
-
-
-
-
-
+    //kprintEl.innerHTML = 'very big';
 </script>
+
+<style>
+    .default-input{
+        color: green;
+        border: 2px solid;
+    }
+
+    .error-input{
+        color: blue;
+        border: 5px solid
+    }
+</style>

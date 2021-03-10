@@ -1,24 +1,9 @@
-<input value="hello kamarik" class="hello-message input" id="hello-message" />
+<div id="logo">
+    <img src="http://k-print.kharkov.ua/images/logo.png" width="200px" alt="kprint">
+</div>
 
-<h1>
-    Широкоформатная печать
-</h1>
-<ul>
-    <li>макет</li>
-    <li>на почту</li>
-
-</ul>
 <script>
-    var helloMessageId;
-    var helloMessageElement;
+    var kprint = document.getElementById('logo');
 
-
-    helloMessageId = "hello-message";
-    helloMessageElement = document.getElementById(helloMessageId);
-
-
-
-    window.alert(helloMessageElement.value);
-    window.alert(helloMessageElement.className);
-    window.alert(helloMessageElement.id);
+    kprint.title = 'print';
 </script>

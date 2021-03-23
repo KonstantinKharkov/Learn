@@ -1,3 +1,36 @@
 .error-input {
     border: red solid 2px;
+    
+}
+
+.kos-kalkulator {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: greenyellow;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.kos-kalkulator .operation-block button {
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+}
+
+.kos-kalkulator .inputs-block .input-block {
+    display: inline-block;
+    padding: 10px;
+}
+
+.kos-kalkulator .inputs-block .input-block label {
+    display: block;
+    height: 30px;
+}
+.kos-kalkulator .inputs-block .input-block input {
+    height: 70px;
+    width: 70px;
+    background-color: blue;
+    border: 2px solid;
+    padding: 30px;
 }

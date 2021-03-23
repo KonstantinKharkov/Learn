@@ -13,4 +13,10 @@ function addErrorClassToAllInputs() {
 
 var sendButton = document.getElementById('send-button');
 
-window.addEventListener('click', addErrorClassToAllInputs);
+sendButton.addEventListener('click', addErrorClassToAllInputs);
+
+
+var buttonPlus = document.getElementById('buttonPlus');
+var buttonPlus = document.getElementById('buttonMinus');
+var buttonPlus = document.getElementById('buttonMultiply');
+var buttonPlus = document.getElementById('buttonDevide');
